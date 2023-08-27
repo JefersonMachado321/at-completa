@@ -41,3 +41,4 @@ Cypress.Commands.add("addProduto", (produto, tamanho, cor, quantidade) => {
     `${quantidade} × “${produto}” foram adicionados no seu carrinho.`
   );
 });
+

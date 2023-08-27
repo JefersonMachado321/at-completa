@@ -8,7 +8,7 @@ describe("Fazendo cadastro endereco", () => {
     });
   });
 
-  it("Pre cadastro - EndereçoDeFaturamento ", () => {
+  it("EndereçoDeFaturamento ", () => {
     EnderecoPage.EndereçoDeFaturamento(
       dadosEndereco[0].nome,
       dadosEndereco[0].sobrenome,
@@ -28,19 +28,19 @@ describe("Fazendo cadastro endereco", () => {
     );
   });
 
-  it.only("Pre cadastro - Endereço de entrega", () => {
+  it("Endereço de entrega", () => {
     EnderecoPage.EndereçoDeEntrega(
-        dadosEndereco[1].nome,
-        dadosEndereco[1].sobrenome,
-        dadosEndereco[1].empresa,
-        dadosEndereco[1].pais,
-        dadosEndereco[1].endereco,
-        dadosEndereco[1].casa,
-        dadosEndereco[1].bairro,
-        dadosEndereco[1].estado,
-        dadosEndereco[1].cep,
+      dadosEndereco[1].nome,
+      dadosEndereco[1].sobrenome,
+      dadosEndereco[1].empresa,
+      dadosEndereco[1].pais,
+      dadosEndereco[1].endereco,
+      dadosEndereco[1].casa,
+      dadosEndereco[1].bairro,
+      dadosEndereco[1].estado,
+      dadosEndereco[1].cep
     );
-    
+
     cy.get(".woocommerce-message").should(
       "contain",
       "Endereço alterado com sucesso."
